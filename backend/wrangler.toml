@@ -1,0 +1,23 @@
+name = "pg-management-backend"
+main = "src/index.ts"
+compatibility_date = "2026-04-13"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+FAST2SMS_BASE_URL = "https://www.fast2sms.com/dev/bulkV2"
+FAST2SMS_WHATSAPP_BASE_URL = "https://www.fast2sms.com"
+FAST2SMS_WHATSAPP_VERSION = "v24.0"
+FAST2SMS_PHONE_NUMBER_ID = "1080800285117161"
+FAST2SMS_TEMPLATE_LANGUAGE_CODE = "en"
+PAYMENT_LINK = "https://example.com/phonepe-demo"
+PAYMENT_UPI_ID = ""
+PAYMENT_PAYEE_NAME = "PG Management"
+PAYMENT_NOTE_PREFIX = "PG Rent"
+R2_ACCOUNT_ID = "b8185b169644414277eacf36d1dd54fb"
+R2_BUCKET_NAME = "pghostel"
+R2_PUBLIC_URL = "https://pub-34332334148d4b53ba660939d1f43abf.r2.dev"
+FRONTEND_ORIGIN = "https://pg-management-frontend-bhz.pages.dev"
+
+[triggers]
+# Daily run at 4:08 PM IST (10:38 UTC) to support per-tenant due-day reminders (for example 6th, 25th, etc.)
+crons = ["38 10 * * *"]
