@@ -219,5 +219,5 @@ Implemented:
 6. Mark payments as paid and upload receipts.
 7. Verify reminder/confirmation SMS delivery in Fast2SMS logs.
 
-# pg
-# pg
+To view this project live use this link 
+https://pg-management-frontend-bhz.pages.dev/#/login
